@@ -1,3 +1,23 @@
+Passo a Passo Utilizado para criar o projeto.
+
+Criei uma pasta chamada assets e armazenei todos as imagens.
+
+Criei um arquivo photoList.js contendo um array de objeto das imagens, com as propriedades id, url e alt.
+
+Exportei a photoList para meu compononente App.js
+
+Cfiei um componente chamado PhotoItem responsavel por gerar cada imagem na tela, passando para esse componente como props a photo e uma funcao para abrir o modal.
+
+Fiz um map na lista de photos e para cada item chamei um componente PhotoItem.
+
+Apos isso criei dois useStates, um para armazenar a photo que seria aberta no modal e o outro para setar se o modal estaria aberto ou nao.
+
+Crieu uma funcao OpenModal que recebe um id e verifica na lista de photos se existe uma foto com o mesmo id, caso exista ele define o primeiro state com a foto que sera exibida no modal e o segundo com o valor de true.
+
+Criei uma funcao de closeModal que tem como objetivo setar o state que define se o modal esta aberto ou nao para falso.
+
+e para finalizar criei o Componente Modal que recebe uma imagem e um funcao para fechar o modal como props. Essa funcao exibe a imagem clicad em fullscreen e possui um botao de X no canto superior direito, que recebe a funcao de close para fechar o Modal.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
